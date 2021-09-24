@@ -1,5 +1,5 @@
-<svg id="1" width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <g id="2">
+<svg id="doc" class="vector" width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g id="main" style="user-select:none">
     <text fill="#000000" font-family="Arial, Helvetica, sans-serif" font-size="24" class="label" id="text_title" stroke="#000000" stroke-width="0" text-anchor="middle" x="150" xml:space="preserve" y="285">Vectors</text>
     <text fill="#000000" font-family="Arial, Helvetica, sans-serif" font-size="24" id="text_y" stroke="#000000" stroke-width="0" text-anchor="middle" x="150" xml:space="preserve" y="35">Y</text>
     <text fill="#000000" font-family="Arial, Helvetica, sans-serif" font-size="24" id="text_z" stroke="#000000" stroke-width="0" text-anchor="middle" x="35" xml:space="preserve" y="225">Z</text>
@@ -13,3 +13,39 @@
     <ellipse cx="150" cy="150" fill="none" id="svg_1" rx="100" ry="100" stroke="#000000" stroke-width="2"/>
   </g>
 </svg>
+
+
+<!-- Style tag ignored when embedded in another SVG - styles inlined above
+<svg id="doc" class="vector" width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      user-select: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24pt;      
+      fill: #000000;
+      text-anchor: middle; 
+    }
+    line, ellipse { 
+      stroke: #000000;
+      stroke-width: 2px;
+    } 
+    .force {
+      stroke-width: 12px;
+      stroke: #ff0000;
+      stroke-linecap: round;
+    }
+  </style>
+  <g id="main">
+    <text id="text_title" x="150" y="285" xml:space="preserve">Vectors</text>
+    <text id="text_y" x="150" y="35" xml:space="preserve">Y</text>
+    <text id="text_Z" x="35" y="225" xml:space="preserve">Z</text>
+    <text id="text_x" y="225" x="265" xml:space="preserve">X</text>
+    <line id="line_y" stroke="#000000" stroke-width="2" transform="translate(150 50)" x1="0" x2="0" y1="0" y2="100"/>
+    <line id="line_z" stroke="#000000" stroke-width="2" transform="translate(150 150) rotate(60) " y2="100"/>
+    <line id="line_x" stroke="#000000" stroke-width="2" transform="translate(150 150) rotate(-60)" x1="0" x2="0" y1="0" y2="100"/>
+    <line id="force_y" class="force" transform="translate(150 150) rotate(180)" x1="0" x2="0" y1="0" y2="50"/>
+    <line id="force_z" class="force" transform="translate(150 150) rotate(60) " x1="0" x2="0" y1="0" y2="60"/>
+    <line id="force_x" class="force" transform="translate(150 150) rotate(-60)" x1="0" x2="0" y1="0" y2="70"/>
+    <ellipse cx="150" cy="150" fill="none" id="svg_1" rx="100" ry="100" stroke="#000000" />
+  </g>
+</svg> -->
